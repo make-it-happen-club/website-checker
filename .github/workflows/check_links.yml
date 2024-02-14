@@ -20,3 +20,6 @@ jobs:
 
       - name: Run Hello Unicorns
         run: python hello_unicorns.py
+
+      - name: Run Thunkable Link Checker
+        run: python check_thunkable_links.py
