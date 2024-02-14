@@ -19,8 +19,7 @@ jobs:
           python-version: 3.9
 
       - name: Install dependencies
-        run: |
-          pip install -r ./requirements.txt
+        run: pip install requests beautifulsoup4
 
       - name: Print Python and pip versions
         run: |
