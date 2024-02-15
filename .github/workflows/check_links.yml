@@ -1,6 +1,7 @@
 name: Check Links on Make It Happen Website Winners
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
