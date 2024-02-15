@@ -20,7 +20,7 @@ def get_links_with_response(url):
                 link_response = requests.head(link_url)
                 app_details = f"App Name: {app_name} | Link: {link_url} | | Response Code: {link_response.status_code}"
                 print(app_details)
-                if link_response.status_code == 200:
+                if link_response.status_code != 200:
                     failed_links.append(app_details)
             except requests.ConnectionError:
                 print(f"{app_details} | Failed to connect")
